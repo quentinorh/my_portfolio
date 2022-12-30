@@ -1,0 +1,7 @@
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title %>
+  <%= f.input :cover_url %>
+  <%= f.input :content %>
+  <%= f.input :tag_list, as: :check_boxes, collection: [ "fabrication", "photographie", "graphisme", "developpement", "environnement" ] %>
+  <%= f.submit %>
+<% end %>

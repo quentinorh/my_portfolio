@@ -1,0 +1,10 @@
+<h1><%= @post.title %></h1>
+<% @post.tag_list.each do |t| %>
+  <li><%= t %></li>
+<% end%>
+<h3>Related Posts</h3>
+<ul>
+  <% @related_posts.each do |p| %>
+    <li><%= p.title %></li>
+  <% end %>
+</ul>

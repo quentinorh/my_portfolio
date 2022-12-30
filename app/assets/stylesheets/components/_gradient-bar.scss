@@ -1,0 +1,40 @@
+.gradient-bar {
+  display: flex;
+  height: 20px;
+}
+
+.gradient-w-b {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $white 0%, $blue 100%);
+}
+
+.gradient-b-y {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $blue 0%, $yellow 100%);
+}
+
+.gradient-y-bg {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $yellow 0%, $blue-grey 100%);
+}
+
+.gradient-bg-p {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $blue-grey 0%, $purple 100%);
+}
+
+.gradient-p-g {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $purple 0%, $green 100%);
+}
+
+.gradient-g-w {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, $green 0%, $white 100%);
+}
