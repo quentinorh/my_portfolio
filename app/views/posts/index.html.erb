@@ -1,18 +1,28 @@
-<% @posts.each do |p| %>
-  <h2><%= p.title %><%= p.tag_list %> </h2>
-  <p>
-    <% p.tag_list.each do |tag| %>
-      <%= link_to tag, tagged_path(tag: tag) %>
-    <% end %>
-  </p>
-<% end %>
+<div class="card-container">
+  <% @posts.each do |p| %>
+    <div class="card-box">
+      <%= link_to post_path(p) do %>
+        <div>
+          <%= cl_image_tag p.photos.first.key, class: "card-img" %>
+        </div>
+        <ul class="card-tags-list">
+          <% p.tag_list.each do |tag| %>
+            <li class="card-tag"><%= link_to tag, tagged_path(tag: tag) %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  <% end %>
+</div>
 
-<%= link_to "fabrication", tagged_path(tag: "fabrication") %>
-<br>
-<%= link_to "photographie", tagged_path(tag: "photographie") %>
-<br>
-<%= link_to "graphisme", tagged_path(tag: "graphisme") %>
-<br>
-<%= link_to "développement", tagged_path(tag: "developpement") %>
-<br>
-<%= link_to "environnement", tagged_path(tag: "environnement") %>
+<div class="tags-list">
+  <%= link_to "fabrication", tagged_path(tag: "fabrication") %>
+  <br>
+  <%= link_to "photographie", tagged_path(tag: "photographie") %>
+  <br>
+  <%= link_to "graphisme", tagged_path(tag: "graphisme") %>
+  <br>
+  <%= link_to "développement", tagged_path(tag: "developpement") %>
+  <br>
+  <%= link_to "environnement", tagged_path(tag: "environnement") %>
+</div>

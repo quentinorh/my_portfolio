@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     if params[:tag].present?
@@ -20,7 +21,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if Post.last
-      @post.order_number = Post.all.order(:order_number).last + 1
+      @post.order_number = Post.all.order(:order_number).last.order_number + 1
     else
       @post.order_number = 1
     end
@@ -35,6 +36,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :cover_url, tag_list: [])
+    params.require(:post).permit(:title, :content, :cover_url, photos: [], tag_list: [])
   end
 end

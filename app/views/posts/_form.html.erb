@@ -1,5 +1,6 @@
 <%= simple_form_for @post do |f| %>
   <%= f.input :title %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
   <%= f.input :cover_url %>
   <%= f.input :content %>
   <%= f.input :tag_list, as: :check_boxes, collection: [ "fabrication", "photographie", "graphisme", "developpement", "environnement" ] %>

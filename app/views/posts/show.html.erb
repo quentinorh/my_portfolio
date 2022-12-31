@@ -1,7 +1,20 @@
 <h1><%= @post.title %></h1>
+
+<% @post.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+  <%= "#{cl_image_tag photo.key, height: 300, width: 400, crop: :fill }" %>
+<% end %>
+
 <% @post.tag_list.each do |t| %>
   <li><%= t %></li>
-<% end%>
+<% end %>
+
+<p>
+<%= render inline: @post.content %>
+</p>
+
+<%= cl_image_tag @post.photos.last.key, height: 300, width: 400, crop: :fill %>
+
 <h3>Related Posts</h3>
 <ul>
   <% @related_posts.each do |p| %>
