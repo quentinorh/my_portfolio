@@ -1,40 +1,96 @@
+.sticky-container {
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  z-index: 10;
+}
+
 .gradient-bar {
   display: flex;
-  height: 20px;
+  height: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.gradient-w-b {
+.gradient-5 {
   height: 100%;
   width: 100%;
-  background: linear-gradient(90deg, $white 0%, $blue 100%);
+  margin-left: -10%;
+  margin-right: -10%;
+  text-align: center;
+  line-height: 0px;
+  opacity: 30%;
 }
 
-.gradient-b-y {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, $blue 0%, $yellow 100%);
+.gradient-b {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $blue 50%, rgba(255,255,255,0) 100%);
+}
+.gradient-y {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $yellow 50%, rgba(255,255,255,0) 100%);
+}
+.gradient-bg {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $blue-grey 50%, rgba(255,255,255,0) 100%);
+}
+.gradient-p {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $purple 50%, rgba(255,255,255,0) 100%);
+}
+.gradient-g {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $green 50%, rgba(255,255,255,0) 100%);
 }
 
-.gradient-y-bg {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, $yellow 0%, $blue-grey 100%);
+.gradient-titles {
+  width: 80%;
+  margin-top: -30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
 }
 
-.gradient-bg-p {
-  height: 100%;
+.popup {
   width: 100%;
-  background: linear-gradient(90deg, $blue-grey 0%, $purple 100%);
+  text-align: center;
+  font-size: 16px;
+  height: 45px;
+  margin-bottom: -15px;
+  line-height: 53px;
+  opacity: 30%;
+  color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease-out;
+  z-index: 20;
 }
 
-.gradient-p-g {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, $purple 0%, $green 100%);
+.popup:hover {
+  opacity: 100%;
+  font-size: 17px;
 }
 
-.gradient-g-w {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, $green 0%, $white 100%);
+
+.blue {
+  color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.blue-grey {
+  color: $blue-grey;
+}
+
+.purple {
+  color: $purple;
+}
+
+.green {
+  color: $green;
+}
+
+
+.opacity-100 {
+  opacity: 100%;
+  font-size: 17px;
+}
+
+.tags-data {
+  display: none;
 }

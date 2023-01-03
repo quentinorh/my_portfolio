@@ -7,22 +7,28 @@
         </div>
         <ul class="card-tags-list">
           <% p.tag_list.each do |tag| %>
-            <li class="card-tag"><%= link_to tag, tagged_path(tag: tag) %></li>
+            <li class="card-tag">
+              <%= link_to tagged_path(tag: tag) do %>
+                <% if tag == "Fabrication" %>
+                  <%= image_tag "fab.png" %>
+                <% end %>
+                <% if tag == "Photographie" %>
+                  <%= image_tag "photo.png" %>
+                <% end %>
+                <% if tag == "Développement" %>
+                  <%= image_tag "dev.png" %>
+                <% end %>
+                <% if tag == "Graphisme" %>
+                  <%= image_tag "graph.png" %>
+                <% end %>
+                <% if tag == "Environnement" %>
+                  <%= image_tag "eco.png" %>
+                <% end %>
+              <% end %>
+            </li>
           <% end %>
         </ul>
       <% end %>
     </div>
   <% end %>
-</div>
-
-<div class="tags-list">
-  <%= link_to "fabrication", tagged_path(tag: "fabrication") %>
-  <br>
-  <%= link_to "photographie", tagged_path(tag: "photographie") %>
-  <br>
-  <%= link_to "graphisme", tagged_path(tag: "graphisme") %>
-  <br>
-  <%= link_to "développement", tagged_path(tag: "developpement") %>
-  <br>
-  <%= link_to "environnement", tagged_path(tag: "environnement") %>
 </div>
