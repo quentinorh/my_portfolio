@@ -7,9 +7,6 @@ ruby "3.1.2"
 gem 'mail_form'
 gem "cloudinary"
 
-# Install Three.js
-# gem 'threejs-rails', git: 'git://github.com/marvindanig/threejs-rails.git'
-
 # Install the Acts-As-Taggable-On Gem
 gem 'acts-as-taggable-on', '~> 9.0'
 
