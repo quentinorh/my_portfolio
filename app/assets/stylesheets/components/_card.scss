@@ -1,10 +1,22 @@
 .card-container {
   padding-top: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 50px;
   grid-auto-rows: minmax(100px, auto);
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card-img {
