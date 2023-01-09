@@ -1,7 +1,13 @@
-.avatar-img {
-  height: 30%;
-  width: 30%;
+.avatar {
+  width: 140px;
 }
+
+@media (min-width: 600px) {
+  .avatar {
+    width: 176px;
+  }
+}
+
 
 input#contact_name, input#contact_email {
   width: 97%;
