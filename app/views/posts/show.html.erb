@@ -1,7 +1,7 @@
 <div class="container-8">
   <div class="g-1-5 show_pics">
     <% @post.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag photo.key, width: "100%" %>
     <% end %>
   </div>
   <div class="g-5-9 show-fix">
