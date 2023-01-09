@@ -4,8 +4,9 @@ class PagesController < ApplicationController
   def home
   end
 
-  def admin
-  end
+  # def admin
+  #   @posts = Post.all.order(order_number: :desc)
+  # end
 
   def contact
   end

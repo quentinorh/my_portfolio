@@ -1,0 +1,37 @@
+<div data-controller="tags">
+  <div class="tags-container">
+    <div class="tags-data" data-tags-target="tags">
+      <% if params[:tag].present? %>
+        <%= params[:tag] %>
+      <% elsif @post %>
+        <% @post.tag_list.each do |t| %>
+          <%= t %>
+        <% end %>
+      <% else %>
+        Fabrication Photographie Graphisme Développement Environnement
+      <% end %>
+    </div>
+    <div class="tags-titles">
+      <div class="flex">
+        <%= link_to tagged_path(tag: "Fabrication"), :class => "icon fab-icon", data: {tags_target: "fabTag"} do %><% end %>
+        <h3 class="tag-title" data-tags-target="fabTitle">Fabrication</h3>
+      </div>
+      <div class="flex">
+        <%= link_to tagged_path(tag: "Photographie"), :class => "icon photo-icon", data: {tags_target: "photoTag"} do %><% end %>
+        <h3 class="tag-title" data-tags-target="photoTitle">Photographie</h3>
+      </div>
+      <div class="flex">
+        <%= link_to tagged_path(tag: "Graphisme"), :class => "icon graph-icon", data: {tags_target: "graphTag"} do %><% end %>
+        <h3 class="tag-title" data-tags-target="graphTitle">Graphisme</h3>
+      </div>
+      <div class="flex">
+        <%= link_to tagged_path(tag: "Développement"), :class => "icon dev-icon", data: {tags_target: "devTag"} do %><% end %>
+        <h3 class="tag-title" data-tags-target="devTitle">Développement</h3>
+      </div>
+      <div class="flex">
+        <%= link_to tagged_path(tag: "Environnement"), :class => "icon env-icon ", data: {tags_target: "envTag"} do %><% end %>
+        <h3 class="tag-title" data-tags-target="envTitle">Environnement</h3>
+      </div>
+    </div>
+  </div>
+</div>

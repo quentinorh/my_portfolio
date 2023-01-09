@@ -1,10 +1,10 @@
-<div class="show-container">
-  <div class="show_pics">
+<div class="container-8">
+  <div class="g-1-5 show_pics">
     <% @post.photos.each do |photo| %>
       <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
     <% end %>
   </div>
-  <div class="show-fix">
+  <div class="g-5-9 show-fix">
     <h1><%= @post.title %></h1>
 
     <% if @post.source %>

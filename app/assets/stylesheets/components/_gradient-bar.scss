@@ -1,96 +1,131 @@
-.sticky-container {
+.tags-data {
+  display: none;
+}
+
+.tags-container {
+  position: absolute;
+  height: 100vh;
+  width: fit-content;
+  margin-left: 0vh;
+  margin-right: 0vh;
+  overflow: hidden;
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -4px 6px -2px;
+}
+
+.sticky {
   position: sticky;
-  background-color: white;
   top: 0px;
-  z-index: 10;
-}
-
-.gradient-bar {
-  display: flex;
-  height: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.gradient-5 {
-  height: 100%;
-  width: 100%;
-  margin-left: -10%;
-  margin-right: -10%;
-  text-align: center;
-  line-height: 0px;
-  opacity: 30%;
-}
-
-.gradient-b {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $blue 50%, rgba(255,255,255,0) 100%);
-}
-.gradient-y {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $yellow 50%, rgba(255,255,255,0) 100%);
-}
-.gradient-bg {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $blue-grey 50%, rgba(255,255,255,0) 100%);
-}
-.gradient-p {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $purple 50%, rgba(255,255,255,0) 100%);
-}
-.gradient-g {
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, $green 50%, rgba(255,255,255,0) 100%);
+  left : 0px;
 }
 
 .gradient-titles {
-  width: 80%;
-  margin-top: -30px;
-  margin-left: 10%;
-  margin-right: 10%;
   display: flex;
+  flex-direction: column;
+  margin-bottom: -50px;
 }
 
-.popup {
-  width: 100%;
-  text-align: center;
-  font-size: 16px;
-  height: 45px;
-  margin-bottom: -15px;
-  line-height: 53px;
-  opacity: 30%;
-  color: rgba(0, 0, 0, 0);
-  transition: all 0.3s ease-out;
+.icon {
+  height: calc(20vh + 52px);
+  width: 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 26px;
+  margin-top: -26px;
+  margin-bottom: -26px;
+  z-index: 10;
+  background-color: rgb(240, 240, 240);
+  display: block;
+}
+.icon:hover {
+  z-index: 30;
+}
+
+.fab-icon {
+  background-image: image-url("fab.png");
+  // transition: 0.2s ease;
+}
+.photo-icon {
+  background-image: image-url("photo.png");
+  // transition: 0.2s ease;
+}
+.graph-icon {
+  background-image: image-url("graph.png");
+  // transition: 0.2s ease;
+}
+.dev-icon {
+  background-image: image-url("dev.png");
+  // transition: 0.2s ease;
+}
+.env-icon {
+  background-image: image-url("env.png");
+  // transition: 0.2s ease;
+}
+
+.fab-icon:hover {
+  background-image: image-url("fab2.png");
+  background-color: $blue;
+}
+.photo-icon:hover {
+  background-image: image-url("photo2.png");
+  background-color: $yellow;
+}
+.graph-icon:hover {
+  background-image: image-url("graph2.png");
+  background-color: $blue-grey;
+}
+.dev-icon:hover {
+  background-image: image-url("dev2.png");
+  background-color: $purple;
+}
+.env-icon:hover {
+  background-image: image-url("env2.png");
+  background-color: $green;
+}
+
+.fab-icon-2 {
+  background-image: image-url("fab2.png");
+  background-color: $blue;
+  z-index: 20;
+}
+.photo-icon-2 {
+  background-image: image-url("photo2.png");
+  background-color: $yellow;
+  z-index: 20;
+}
+.graph-icon-2 {
+  background-image: image-url("graph2.png");
+  background-color: $blue-grey;
+  z-index: 20;
+}
+.dev-icon-2 {
+  background-image: image-url("dev2.png");
+  background-color: $purple;
+  z-index: 20;
+}
+.env-icon-2 {
+  background-image: image-url("env2.png");
+  background-color: $green;
   z-index: 20;
 }
 
-.popup:hover {
-  opacity: 100%;
-  font-size: 17px;
+.gradient-tags {
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  margin-left: 60px;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-
-.blue {
-  color: $blue;
+.tag-title {
+  padding-left: 10px;
+  display: inline;
+  font-size: 16px;
+  opacity: 0%;
+  margin-top: 3px;
+  transition: opacity 1s linear;
 }
 
-.yellow {
-  color: $yellow;
-}
-
-.blue-grey {
-  color: $blue-grey;
-}
-
-.purple {
-  color: $purple;
-}
-
-.green {
-  color: $green;
-}
-
-
-.opacity-100 {
-  opacity: 100%;
-  font-size: 17px;
-}
-
-.tags-data {
-  display: none;
+.icon:hover + .tag-title {
+  opacity: 60%;
 }

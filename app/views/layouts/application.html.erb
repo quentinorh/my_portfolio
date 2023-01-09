@@ -9,20 +9,24 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <body class="container">
-    <%= render "shared/navbar" %>
-    <%= render "shared/gradient-bar" %>
-    <%# <%= render "shared/tags-bar" %>
-    <%= render "shared/flashes" %>
-    <%= yield %>
+  <body>
+    <div class="sticky">
+      <%= render "shared/tagsbar" %>
+    </div>
+    <div class="container">
+      <%= render "shared/navbar" %>
+      <%= render "shared/flashes" %>
+      <%= yield %>
+      <div class="footer"></div>
+    </div>
   </body>
 </html>
 
-<script>
+<%# <script>
   $(document).on('ready page:load', function () {
     $('#post_tag_ids').chosen({
       allow_single_deselect: true,
       width: '100%'
     })
   });
-</script>
+</script> %>

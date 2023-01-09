@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # gem 'simple_form-tailwind'
-
+gem 'mail_form'
 gem "cloudinary"
 
 # Install Three.js
