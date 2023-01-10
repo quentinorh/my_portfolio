@@ -1,0 +1,36 @@
+.next-prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.next:hover {
+  margin-right: -10px;
+}
+
+.prev:hover {
+  margin-left: -10px;
+}
+
+.prev {
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.next-title {
+  padding-bottom: 17px;
+  text-align: right;
+  color: black;
+}
+
+.prev-title {
+  padding-bottom: 17px;
+  text-align: left;
+  color: black;
+}

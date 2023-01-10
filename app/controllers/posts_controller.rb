@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @related_posts = @post.find_related_tags
+    @posts = Post.all.order(order_number: :desc)
   end
 
   def new

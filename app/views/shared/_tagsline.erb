@@ -15,8 +15,8 @@
     <% if params[:tag] == "Environnement" %>
       <%= link_to tagged_path(tag: "Environnement") do %><h3 class="tag-line env-tag">Environnement</h3><% end %>
     <% end %>
+    <div class="spacer-30"></div>
   <% end %>
-
   <% if @post.present? %>
     <% @post.tag_list.each do |tag| %>
       <% if tag == "Fabrication" %>
@@ -35,5 +35,6 @@
         <%= link_to tagged_path(tag: "Environnement") do %><h3 class="multi-tag-line env-tag">Environnement</h3><% end %>
       <% end %>
     <% end %>
+    <div class="spacer-30"></div>
   <% end %>
 </div>
