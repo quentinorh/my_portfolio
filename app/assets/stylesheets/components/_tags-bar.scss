@@ -8,7 +8,6 @@
   width: fit-content;
   margin-left: 0vh;
   margin-right: 0vh;
-  // box-shadow: rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -4px 6px -2px;
 }
 
 .tags-container2{
@@ -44,27 +43,27 @@
 }
 
 .fab-icon {
-  background-image: image-url("fab.png");
+  background-image: image-url("fab3.png");
   background-size: 40px;
   // transition: 0.2s ease;
 }
 .photo-icon {
-  background-image: image-url("photo.png");
+  background-image: image-url("photo3.png");
   background-size: 40px;
   // transition: 0.2s ease;
 }
 .graph-icon {
-  background-image: image-url("graph.png");
+  background-image: image-url("graph3.png");
   background-size: 40px;
   // transition: 0.2s ease;
 }
 .dev-icon {
-  background-image: image-url("dev.png");
+  background-image: image-url("dev3.png");
   background-size: 40px;
   // transition: 0.2s ease;
 }
 .env-icon {
-  background-image: image-url("env.png");
+  background-image: image-url("env3.png");
   background-size: 40px;
   // transition: 0.2s ease;
 }
@@ -137,7 +136,7 @@
 
 .tag-title {
   padding-left: 10px;
-  display: inline;
+  display: none;
   font-size: 16px;
   opacity: 0%;
   margin-top: 3px;
@@ -146,4 +145,5 @@
 
 .icon:hover + .tag-title {
   opacity: 60%;
+  display: inline;
 }

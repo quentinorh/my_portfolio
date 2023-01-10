@@ -1,0 +1,52 @@
+.tags-line {
+  text-align: center;
+}
+
+.tag-line {
+  color: white;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  height: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.multi-tag-line {
+  color: white;
+  font-size: 13px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  height: 20px;
+  border-radius: 25px;
+  margin-left: 3px;
+  margin-right: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.fab-tag {
+ background-color: $blue;
+}
+
+.photo-tag {
+  background-color: $yellow;
+}
+
+.graph-tag {
+  background-color: $blue-grey;
+}
+
+.dev-tag {
+  background-color: $purple;
+}
+
+.env-tag {
+  background-color: $green;
+}

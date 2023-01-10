@@ -1,44 +1,19 @@
 <div class="container-8">
   <div class="g-1-5 show_pics">
     <% @post.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, width: "100%" %>
+      <%= cl_image_tag photo.key, width: "100%", class: "img-show" %>
     <% end %>
   </div>
   <div class="g-5-9 show-fix">
     <h1><%= @post.title %></h1>
-
     <% if @post.source %>
-      <h2>Description :</h2>
+      <h3>Description</h3>
       <p><%= @post.description %></p>
     <% end %>
-
     <% if @post.source %>
-      <h2>Source :</h2>
+      <h3>Source</h3>
       <%= link_to @post.source do %>
         <p><%= @post.source %></p>
-      <% end %>
-    <% end %>
-
-    <% if @post.tag_list.count > 1 %>
-      <h2>Catégories :</h2>
-    <% else %>
-      <h3>Catégorie :</h3>
-    <% end %>
-    <% @post.tag_list.each do |t| %>
-      <% if t == "Fabrication" %>
-        <%= link_to tagged_path(tag: t) do %><h3 class="blue"><%= t %></h3><% end %>
-      <% end %>
-      <% if t == "Photographie" %>
-        <%= link_to tagged_path(tag: t) do %><h3 class="yellow"><%= t %></h3><% end %>
-      <% end %>
-      <% if t == "Graphisme" %>
-        <%= link_to tagged_path(tag: t) do %><h3 class="blue-grey"><%= t %></h3><% end %>
-      <% end %>
-      <% if t == "Développement" %>
-        <%= link_to tagged_path(tag: t) do %><h3 class="purple"><%= t %></h3><% end %>
-      <% end %>
-      <% if t == "Environnement" %>
-        <%= link_to tagged_path(tag: t) do %><h3 class="green"><%= t %></h3><% end %>
       <% end %>
     <% end %>
   </div>
