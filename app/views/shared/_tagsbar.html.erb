@@ -14,23 +14,43 @@
       </div>
       <div class="tags-titles">
         <div class="flex">
-          <%= link_to tagged_path(tag: "Fabrication"), :class => "icon fab-icon", data: {tags_target: "fabTag"} do %><% end %>
+          <% if params[:tag].present? && params[:tag] == "Fabrication" %>
+            <%= link_to tagged_path, :class => "icon fab-icon", data: {tags_target: "fabTag"} do %><% end %>
+          <% else %>
+            <%= link_to tagged_path(tag: "Fabrication"), :class => "icon fab-icon", data: {tags_target: "fabTag"} do %><% end %>
+          <% end %>
           <h3 class="tag-title" data-tags-target="fabTitle">Fabrication</h3>
         </div>
         <div class="flex">
-          <%= link_to tagged_path(tag: "Photographie"), :class => "icon photo-icon", data: {tags_target: "photoTag"} do %><% end %>
+          <% if params[:tag].present? && params[:tag] == "Photographie" %>
+            <%= link_to tagged_path, :class => "icon photo-icon", data: {tags_target: "photoTag"} do %><% end %>
+          <% else %>
+            <%= link_to tagged_path(tag: "Photographie"), :class => "icon photo-icon", data: {tags_target: "photoTag"} do %><% end %>
+          <% end %>
           <h3 class="tag-title" data-tags-target="photoTitle">Photographie</h3>
         </div>
         <div class="flex">
-          <%= link_to tagged_path(tag: "Graphisme"), :class => "icon graph-icon", data: {tags_target: "graphTag"} do %><% end %>
+          <% if params[:tag].present? && params[:tag] == "Graphisme" %>
+            <%= link_to tagged_path, :class => "icon graph-icon", data: {tags_target: "graphTag"} do %><% end %>
+          <% else %>
+            <%= link_to tagged_path(tag: "Graphisme"), :class => "icon graph-icon", data: {tags_target: "graphTag"} do %><% end %>
+          <% end %>
           <h3 class="tag-title" data-tags-target="graphTitle">Graphisme</h3>
         </div>
         <div class="flex">
-          <%= link_to tagged_path(tag: "Développement"), :class => "icon dev-icon", data: {tags_target: "devTag"} do %><% end %>
+          <% if params[:tag].present? && params[:tag] == "Développement" %>
+            <%= link_to tagged_path, :class => "icon dev-icon", data: {tags_target: "devTag"} do %><% end %>
+          <% else %>
+            <%= link_to tagged_path(tag: "Développement"), :class => "icon dev-icon", data: {tags_target: "devTag"} do %><% end %>
+          <% end %>
           <h3 class="tag-title" data-tags-target="devTitle">Développement</h3>
         </div>
         <div class="flex">
-          <%= link_to tagged_path(tag: "Environnement"), :class => "icon env-icon ", data: {tags_target: "envTag"} do %><% end %>
+          <% if params[:tag].present? && params[:tag] == "Environnement" %>
+            <%= link_to tagged_path, :class => "icon env-icon", data: {tags_target: "envTag"} do %><% end %>
+          <% else %>
+            <%= link_to tagged_path(tag: "Environnement"), :class => "icon env-icon ", data: {tags_target: "envTag"} do %><% end %>
+          <% end %>
           <h3 class="tag-title" data-tags-target="envTitle">Environnement</h3>
         </div>
       </div>

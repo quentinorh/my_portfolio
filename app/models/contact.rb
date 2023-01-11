@@ -1,17 +1,15 @@
 class Contact < MailForm::Base
   attribute :name,      validate: true
   attribute :email,     validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :message
+  attribute :message,   validate:true
   attribute :nickname,  captcha: true
-  validates :name, :email, :message, :nickname, presence: true
 
-  # Declare the e-mail headers. It accepts anything the mail method
-  # in ActionMailer accepts.
   def headers
     {
-      :subject => "Message du formulaire",
-      :to => "quentin.orhant@mailo.fr",
-      :from => %("#{name}" <#{email}>)
+      to: "quentin.orhant@mailo.fr", # change this to be the email you want sent to
+      subject: "Message contact Portfolio",
+      from: "contact@quentino.io",  # change this to be the email it is coming from
+      reply_to: %("#{name}" <#{email}>)
     }
   end
 end
