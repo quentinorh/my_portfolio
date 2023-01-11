@@ -143,7 +143,9 @@
   transition: opacity 1s linear;
 }
 
-.icon:hover + .tag-title {
-  opacity: 60%;
-  display: inline;
+@media (min-width: 600px) {
+  .icon:hover + .tag-title {
+    opacity: 60%;
+    display: inline;
+  }
 }
