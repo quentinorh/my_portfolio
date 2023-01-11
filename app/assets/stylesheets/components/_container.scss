@@ -6,27 +6,33 @@
   width: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 576px) {
   .container {
-    width: 500px;
+    width: 400px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 992px) {
   .container {
-    width: 800px;
+    width: auto;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .container {
-    width: 1150px;
+    width: auto;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1400px) {
   .container {
-    width: 1500px;
+    width: auto;
+    margin-left: 160px;
+    margin-right: 160px;
   }
 }
 
