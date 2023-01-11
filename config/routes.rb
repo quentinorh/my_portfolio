@@ -7,8 +7,7 @@ Rails.application.routes.draw do
     end
   end
   root to: "posts#index", as: :tagged
-  resources :contacts, only: [:create]
-  # get "contact", to: "pages#contact"
-  get "contact", to: "contacts#new"
-  # get "admin", to: "pages#admin"
+  resources :contacts, only: [:new, :create]
+  get 'contact', to: 'contacts#new', as: 'contact'
+  get 'contacts/sent'
 end

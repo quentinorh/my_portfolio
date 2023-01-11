@@ -9,11 +9,15 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:success] = 'Message sent!'
+      redirect_to action: :sent
+      # flash.now[:success] = 'Message sent!'
     else
       flash.now[:error] = 'Could not send message'
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
+  def sent
+
+  end
 end
