@@ -22,14 +22,27 @@ h2, h3 {
   font-family: $headers-font;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18x;
   line-height: 33px;
   letter-spacing: 0.12em;
 }
 
+@media (min-width: 992px) {
+  .list {
+    font-size: 20px
+  }
+}
+
 h2 {
+  font-size: 24px;
   margin-top: 0;
   margin-block-end: 0.5em;
+}
+
+@media (min-width: 992px) {
+  .h2 {
+    font-size: 22px;
+  }
 }
 
 h3 {
@@ -38,22 +51,42 @@ h3 {
 }
 
 h3, label {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .h3, label {
+    font-size: 18px;
+  }
 }
 
 a {
-  font-size: 14px;
+  font-size: 12px;
   color: $red;
 }
+
+@media (min-width: 992px) {
+  a {
+    font-size: 14px;
+  }
+}
+
 
 p {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
   line-height: 27px;
   letter-spacing: 0.12em;
 }
+
+@media (min-width: 992px) {
+  p {
+    font-size: 18px;
+  }
+}
+
 
 
 .p-highlight {
@@ -66,6 +99,13 @@ p {
   color: black;
 }
 
+@media (min-width: 992px) {
+  .p-highlight {
+    font-size: 15px;
+  }
+}
+
+
 .text-align-center {
   text-align: center;
 }
@@ -73,9 +113,16 @@ p {
 .tag {
   font-family: $headers-font;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: 992px) {
+  .tag {
+    font-size: 20px;
+  }
+}
+
 
 .display-none {
   display: none;
