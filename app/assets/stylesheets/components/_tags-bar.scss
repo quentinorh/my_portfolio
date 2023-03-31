@@ -187,13 +187,13 @@
   margin-top: -16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .tag-title {
     display: inline;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .icon:hover + .tag-title {
     opacity: 100%;
   }
