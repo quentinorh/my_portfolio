@@ -1,5 +1,5 @@
 <div class="nav-container">
-  <%= link_to tagged_path do %>
+  <%= link_to tagged_path, class: "header-p-header" do %>
     <h1 class="header text-align-center">Quentin Orhant</h1>
     <p class="p-header text-align-center">Maker et développeur freelance</p>
   <% end %>
@@ -9,4 +9,5 @@
     <% end %>
     <%= link_to "Contact", contact_path, class: "button" %>
   </div>
+  <%= render "shared/tagsline" %>
 </div>
