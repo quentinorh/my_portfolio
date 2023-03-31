@@ -7,7 +7,7 @@
   <div class="g-5-9 show-fix">
     <h1><%= @post.title %></h1>
     <% if @post.description.present? %>
-      <p><%= @post.description %></p>
+      <p><%= simple_format @post.description %></p>
     <% end %>
     <% if @post.source.present? %>
       <h3>Source</h3>
