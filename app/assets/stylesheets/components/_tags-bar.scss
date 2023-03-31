@@ -28,7 +28,7 @@
 }
 
 .icon {
-  height: calc(20vh + 44px);
+  height: calc(20vh + 36px);
   width: 44px;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,89 +38,121 @@
   z-index: 10;
   background-color: rgb(240, 240, 240);
   display: block;
+  background-size: 40px;
 }
+
+.icon-top {
+  margin-top: 0px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+.icon-bottom {
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+@media (max-height: 400px) {
+  .icon {
+    height: calc(20vh + 18px);
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 11px;
+    margin-top: -11px;
+    margin-bottom: -11px;
+    z-index: 10;
+    background-color: rgb(240, 240, 240);
+    display: block;
+    background-size: 20px;
+  }
+  .icon-top {
+    margin-top: 0px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+  .icon-bottom {
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .icon {
+    height: calc(20vh + 36px);
+  }
+}
+
+
 .icon:hover {
   z-index: 20;
 }
 
 .fab-icon {
   background-image: image-url("fab1.png");
-  background-size: 40px;
 }
 .photo-icon {
   background-image: image-url("photo1.png");
-  background-size: 40px;
 }
 .graph-icon {
   background-image: image-url("graph1.png");
-  background-size: 40px;
 }
 .dev-icon {
   background-image: image-url("dev1.png");
-  background-size: 40px;
 }
 .env-icon {
   background-image: image-url("env1.png");
-  background-size: 40px;
 }
 
 .fab-icon:hover {
   background-image: image-url("fab2.png");
-  background-size: 40px;
   background-color: $blue;
 }
 .photo-icon:hover {
   background-image: image-url("photo2.png");
-  background-size: 40px;
   background-color: $yellow;
 }
 .graph-icon:hover {
   background-image: image-url("graph2.png");
-  background-size: 40px;
   background-color: $blue-grey;
 }
 .dev-icon:hover {
   background-image: image-url("dev2.png");
-  background-size: 40px;
   background-color: $purple;
 }
 .env-icon:hover {
   background-image: image-url("env2.png");
-  background-size: 40px;
   background-color: $green;
 }
 
 .fab-icon-2 {
   background-image: image-url("fab2.png");
-  background-size: 40px;
   background-color: $blue;
   z-index: 20;
 }
 
 .photo-icon-2 {
   background-image: image-url("photo2.png");
-  background-size: 40px;
   background-color: $yellow;
   z-index: 20;
 }
 
 .graph-icon-2 {
   background-image: image-url("graph2.png");
-  background-size: 40px;
   background-color: $blue-grey;
   z-index: 20;
 }
 
 .dev-icon-2 {
   background-image: image-url("dev2.png");
-  background-size: 40px;
   background-color: $purple;
   z-index: 20;
 }
 
 .env-icon-2 {
   background-image: image-url("env2.png");
-  background-size: 40px;
   background-color: $green;
   z-index: 20;
 }
@@ -145,6 +177,14 @@
   opacity: 0%;
   margin-top: 3px;
   // transition: opacity 1s linear;
+}
+
+.tag-title-top {
+  margin-top: 24px;
+}
+
+.tag-title-bottom {
+  margin-top: -16px;
 }
 
 @media (min-width: 768px) {

@@ -27,22 +27,10 @@ h2, h3 {
   letter-spacing: 0.12em;
 }
 
-@media (min-width: 992px) {
-  .list {
-    font-size: 20px
-  }
-}
-
 h2 {
   font-size: 24px;
   margin-top: 0;
   margin-block-end: 0.5em;
-}
-
-@media (min-width: 992px) {
-  .h2 {
-    font-size: 22px;
-  }
 }
 
 h3 {
@@ -51,26 +39,13 @@ h3 {
 }
 
 h3, label {
-  font-size: 18px;
-}
-
-@media (min-width: 992px) {
-  .h3, label {
-    font-size: 18px;
-  }
+  font-size: 16px;
 }
 
 a {
   font-size: 12px;
   color: $red;
 }
-
-@media (min-width: 992px) {
-  a {
-    font-size: 14px;
-  }
-}
-
 
 p {
   font-style: normal;
@@ -80,14 +55,6 @@ p {
   line-height: 27px;
   letter-spacing: 0.12em;
 }
-
-@media (min-width: 992px) {
-  p {
-    font-size: 18px;
-  }
-}
-
-
 
 .p-highlight {
   font-family: $body-font;
@@ -99,13 +66,6 @@ p {
   color: black;
 }
 
-@media (min-width: 992px) {
-  .p-highlight {
-    font-size: 15px;
-  }
-}
-
-
 .text-align-center {
   text-align: center;
 }
@@ -116,13 +76,6 @@ p {
   font-size: 18px;
   text-transform: uppercase;
 }
-
-@media (min-width: 992px) {
-  .tag {
-    font-size: 20px;
-  }
-}
-
 
 .display-none {
   display: none;
@@ -164,7 +117,7 @@ label {
 }
 
 .spacer-last {
-  height: 122px;
+  height: 110px;
 }
 
 .footer {
