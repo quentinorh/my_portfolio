@@ -10,7 +10,7 @@
 
 
 input#contact_name, input#contact_email {
-  width: 97%;
+  width: calc(100% - 10px);
 }
 
 .contact-form {
@@ -22,7 +22,7 @@ input#contact_name, input#contact_email {
 
 
 textarea#contact_message.contact-form-text-area {
-  width: calc(100% - 26px);
+  width: calc(100% - 24px);
   padding: 10px;
 }
 
