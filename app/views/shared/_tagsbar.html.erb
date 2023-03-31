@@ -19,7 +19,7 @@
           <% else %>
             <%= link_to tagged_path(tag: "Fabrication"), :class => "icon fab-icon", data: {tags_target: "fabTag"} do %><% end %>
           <% end %>
-          <h3 class="tag-title" data-tags-target="fabTitle">Fabrication</h3>
+          <div class="tag-title">Fabrication</div>
         </div>
         <div class="flex">
           <% if params[:tag].present? && params[:tag] == "Photographie" %>
@@ -27,7 +27,7 @@
           <% else %>
             <%= link_to tagged_path(tag: "Photographie"), :class => "icon photo-icon", data: {tags_target: "photoTag"} do %><% end %>
           <% end %>
-          <h3 class="tag-title" data-tags-target="photoTitle">Photographie</h3>
+          <div class="tag-title">Photographie</div>
         </div>
         <div class="flex">
           <% if params[:tag].present? && params[:tag] == "Graphisme" %>
@@ -35,7 +35,7 @@
           <% else %>
             <%= link_to tagged_path(tag: "Graphisme"), :class => "icon graph-icon", data: {tags_target: "graphTag"} do %><% end %>
           <% end %>
-          <h3 class="tag-title" data-tags-target="graphTitle">Graphisme</h3>
+          <div class="tag-title">Graphisme</div>
         </div>
         <div class="flex">
           <% if params[:tag].present? && params[:tag] == "Développement" %>
@@ -43,7 +43,7 @@
           <% else %>
             <%= link_to tagged_path(tag: "Développement"), :class => "icon dev-icon", data: {tags_target: "devTag"} do %><% end %>
           <% end %>
-          <h3 class="tag-title" data-tags-target="devTitle">Développement</h3>
+          <div class="tag-title">Développement</div>
         </div>
         <div class="flex">
           <% if params[:tag].present? && params[:tag] == "Environnement" %>
@@ -51,7 +51,7 @@
           <% else %>
             <%= link_to tagged_path(tag: "Environnement"), :class => "icon env-icon ", data: {tags_target: "envTag"} do %><% end %>
           <% end %>
-          <h3 class="tag-title" data-tags-target="envTitle">Environnement</h3>
+          <div class="tag-title">Environnement</div>
         </div>
       </div>
     </div>

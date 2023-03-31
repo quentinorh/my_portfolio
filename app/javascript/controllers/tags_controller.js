@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="tags"
 export default class extends Controller {
-  static targets = ["tags", "fabTitle", "fabTag", "photoTitle", "photoTag", "graphTitle", "graphTag", "devTitle", "devTag", "envTitle", "envTag"]
+  static targets = ["tags", "fabTag", "photoTag", "graphTag", "devTag", "envTag"]
   static values = {
     content: String,
   }
