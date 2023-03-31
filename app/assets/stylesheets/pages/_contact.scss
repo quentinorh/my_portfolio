@@ -22,15 +22,14 @@ input#contact_name, input#contact_email {
 
 
 textarea#contact_message.contact-form-text-area {
-  width: calc(100% - 20px);
+  width: calc(100% - 26px);
   padding: 10px;
 }
 
 .send-button {
   margin-top: 10px !important;
   border-radius: 22px;
-  // display: flex;
-  // margin: auto;
+  margin-left: calc(50% - 56px);
 }
 
 .icons-logiciels {
@@ -38,9 +37,8 @@ textarea#contact_message.contact-form-text-area {
   margin-top: 20px;
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   .icons-logiciels {
-    width: 510px;
+    width: 440px;
   }
 }
