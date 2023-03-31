@@ -7,7 +7,13 @@
 
 .show-fix {
   text-align:right;
-  padding-left: 20%;
+  padding-left: 0%;
+}
+
+@media (min-width: 1200px) {
+  .show-fix {
+    padding-left: 16px;
+  }
 }
 
 .img-show {
