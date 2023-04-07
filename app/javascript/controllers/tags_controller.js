@@ -8,6 +8,8 @@ export default class extends Controller {
   }
 
   connect() {
+    console.log("Hellooooouuu World!")
+
     if (this.tagsTarget.innerHTML.includes("Fabrication")){
       this.fabTagTarget.classList.add("fab-icon-2")
     }
@@ -24,38 +26,4 @@ export default class extends Controller {
       this.envTagTarget.classList.add("env-icon-2")
     }
   }
-  // mouseOverFab(){
-  //   this.fabColorTarget.classList.add("show")
-  // }
-  // mouseOutFab(){
-  //   this.fabColorTarget.classList.remove("show")
-  // }
-
-  // mouseOverPhoto(){
-  //   this.photoColorTarget.classList.add("show")
-  // }
-  // mouseOutPhoto(){
-  //   this.photoColorTarget.classList.remove("show")
-  // }
-
-  // mouseOverGraph(){
-  //   this.graphColorTarget.classList.add("show")
-  // }
-  // mouseOutGraph(){
-  //   this.graphColorTarget.classList.remove("show")
-  // }
-
-  // mouseOverDev(){
-  //   this.devColorTarget.classList.add("show")
-  // }
-  // mouseOutDev(){
-  //   this.devColorTarget.classList.remove("show")
-  // }
-
-  // mouseOverEnv(){
-  //   this.envColorTarget.classList.add("show")
-  // }
-  // mouseOutEnv(){
-  //   this.envColorTarget.classList.remove("show")
-  // }
 }

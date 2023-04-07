@@ -10,9 +10,10 @@
     <%= favicon_link_tag "favicon.ico", rel: "icon" %>
   </head>
 
-  <body>
+  <body data-hijacking="off" data-animation="none">
     <%= render "shared/tagsbar" %>
     <%= render "shared/navbar" %>
+    <%= render "shared/tagsline" %>
     <%= render "shared/flashes" %>
     <div class="container">
       <%= yield %>

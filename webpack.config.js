@@ -12,9 +12,14 @@ module.exports = {
     sourceMapFilename: "[file].map",
     path: path.resolve(__dirname, "app/assets/builds"),
   },
+  entry: {
+    application: "./app/javascript/application.js",
+    scrollmagic_controller: "./app/javascript/controllers/scrollmagic_controller.js"
+  },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
       maxChunks: 1
     })
   ]
+
 }
