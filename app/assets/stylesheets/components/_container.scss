@@ -78,13 +78,18 @@
 
 @media (min-width: 1200px) {
   .container-8 {
-    max-width: 1000px;
     width: auto;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(auto, auto);
     text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-contact {
+    max-width: 1000px;
   }
 }
 
@@ -117,6 +122,11 @@
 
 .g-5-9 {
   grid-column: 5 / 9;
+  text-align: left;
+}
+
+.g-6-9 {
+  grid-column: 6 / 9;
   text-align: left;
 }
 
