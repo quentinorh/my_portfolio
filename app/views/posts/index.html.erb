@@ -8,7 +8,7 @@
   <% @posts.each do |p| %>
     <div class="card-box">
       <%= link_to post_path(p) do %>
-        <%= cl_image_tag p.photos.first.key, class: "card-img", width: 650, height: 650, gravity: "auto", quality: "auto", fetch_format: :auto, crop: :fill %>
+        <%= cl_image_tag p.photos.first.key, class: "card-img", width: 650, height: 650, quality: "auto", fetch_format: :auto, crop: :fill %>
       <% end %>
       <% if current_user %>
         <%= link_to "Edit", edit_post_path(p), class: "card-edit button" %>
