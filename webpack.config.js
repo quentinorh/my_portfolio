@@ -14,7 +14,6 @@ module.exports = {
   },
   entry: {
     application: "./app/javascript/application.js",
-    scrollmagic_controller: "./app/javascript/controllers/scrollmagic_controller.js"
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({

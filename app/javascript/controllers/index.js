@@ -4,20 +4,11 @@
 
 import { application } from "./application"
 
-// import ContactController from "./contact_controller"
-// application.register("contact", ContactController)
-
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
 import PicturesController from "./pictures_controller"
 application.register("pictures", PicturesController)
 
-import ResponsiveController from "./responsive_controller"
-application.register("responsive", ResponsiveController)
-
 import TagsController from "./tags_controller"
 application.register("tags", TagsController)
-
-import SliderController from "./slider_controller"
-application.register("slider", SliderController)
