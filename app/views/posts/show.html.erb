@@ -1,7 +1,7 @@
 <div class="container-8">
   <div class="g-1-5 show_pics">
     <% @post.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, class: "img-show",  width: 860, quality: :auto, fetch_format: :avif, crop: "fill" %>
+      <%= cl_image_tag photo.key, class: "img-show",  width: 860, quality: :auto, crop: "fill" %>
 <%#
 
       crop: :fill %>
